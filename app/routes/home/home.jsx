@@ -94,7 +94,8 @@ export const Home = () => {
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
-      <ProjectSummary
+
+     <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
@@ -160,6 +161,7 @@ export const Home = () => {
           ],
         }}
       />
+
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}

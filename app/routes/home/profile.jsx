@@ -1,9 +1,13 @@
-import notfound from '~/assets/notfound.jpg';
+import profileImgLarge from '~/assets/profile-large.jpg';
+import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
+import profileImg from '~/assets/profile.jpg';
+import notfoundImg from '~/assets/notfound.jpg'
 import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
 import { Heading } from '~/components/heading';
 import { Image } from '~/components/image';
+import { Link } from '~/components/link';
 import { Section } from '~/components/section';
 import { Text } from '~/components/text';
 import { Transition } from '~/components/transition';
@@ -17,20 +21,18 @@ const ProfileText = ({ visible, titleId }) => (
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
-<Text className={styles.description} data-visible={visible} size="l" as="p">
-  I’m Huzaif Ahmed, a full-stack web developer. I build modern, animated, and
-  interactive web projects that combine clean code with engaging user experiences.
-  Being comfortable with multiple technologies allows me to rapidly prototype and
-  deliver creative solutions.
-</Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+      I’m Huzaif Ahmed, a full-stack web developer. I build modern, animated, and
+      interactive web projects that combine clean code with engaging user experiences.
+      Being comfortable with multiple technologies allows me to rapidly prototype and
+      deliver creative solutions.
+    </Text>
 
-<Text className={styles.description} data-visible={visible} size="l" as="p">
-  In my spare time, I enjoy exploring new frameworks, contributing to open-source projects,
-  and creating side projects. I’m always excited to hear about new ideas, so feel free to
-  get in touch!
-</Text>
-
-
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+      In my spare time, I enjoy exploring new frameworks, contributing to open-source
+      projects, and creating side projects. I’m always excited to hear about new ideas, so
+      feel free to get in touch!
+    </Text>
   </Fragment>
 );
 
@@ -80,8 +82,8 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 <Image
                   reveal
                   delay={100}
-                  placeholder={notfound}
-                  srcSet={`${notfound} 480w, ${notfound} 960w`}
+                  placeholder={notfoundImg}
+                  srcSet={`${notfoundImg} 480w, ${notfoundImg} 960w`}
                   width={960}
                   height={1280}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}

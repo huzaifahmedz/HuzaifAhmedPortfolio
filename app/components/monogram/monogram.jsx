@@ -17,7 +17,7 @@ export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => 
       {...props}
     >
       <defs>
-        <clipPath id={clipId}>
+              <clipPath id={clipId}>
 <path d="M0 0h6v8h16V0h6v20h-6v-6H6v20H0V0Z" />
 
 

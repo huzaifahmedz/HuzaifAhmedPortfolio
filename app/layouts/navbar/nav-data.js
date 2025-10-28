@@ -9,7 +9,7 @@ export const navLinks = [
     label: 'Details',
     pathname: '/#details',
   },
- 
+
   {
     label: 'Contact',
     pathname: '/contact',
@@ -23,6 +23,4 @@ export const socialLinks = [
     url: `https://github.com/${config.github}`,
     icon: 'github',
   },
-
-  
 ];
